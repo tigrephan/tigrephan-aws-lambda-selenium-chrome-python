@@ -1,0 +1,8 @@
+boto3
+botocore
+datetime
+urllib3
+certifi
+pendulum
+selenium
+pyvirtualdisplay
