@@ -1,6 +1,10 @@
 from selenium import webdriver
 import os
-
+from fake_useragent import UserAgent
+#Useragent stuff
+ua = UserAgent()
+# userAgent = ua.random
+userAgent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36'
 
 def lambda_handler(event=None, context=None):
     # For troubleshooting, will show if your files are where you expective them to be once the container uploaded to aws

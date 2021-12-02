@@ -1,8 +1,9 @@
-boto3
-botocore
+boto3==1.19.9
+botocore==1.22.9
 datetime
-urllib3
-certifi
-pendulum
-selenium
+urllib3==1.26.7
+certifi==2021.10.8
+pendulum==2.1.2
+selenium==4.0.0
 pyvirtualdisplay
+fake_useragent

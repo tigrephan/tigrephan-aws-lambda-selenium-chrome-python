@@ -4,8 +4,8 @@ declare -A chrome_versions
 
 # Enter the list of browsers to be downloaded
 ### Using Chromium as documented here - https://www.chromium.org/getting-involved/download-chromium
-chrome_versions=( ['89.0.4389.47']='843831' )
-chrome_drivers=( "89.0.4389.23" )
+# chrome_versions=( ['89.0.4389.47']='843831' )
+# chrome_drivers=( "89.0.4389.23" )
 #firefox_versions=( "86.0" "87.0b3" )
 #gecko_drivers=( "0.29.0" )
 
@@ -32,6 +32,8 @@ do
     unzip -q "/opt/chromedriver/stable//chromedriver_linux64.zip" \
     -d "/opt/chromedriver/stable/"
     chmod +x "/opt/chromedriver/stable/chromedriver"
+    #This replaces the cdc string with equal length string. Some sites uses this to detect automation
+    sed -i 's/$cdc_asdjflasutopfhvcZLmcfl_/$kll_eyiufkldhnjhaluowhuul3_/g' /opt/chromedriver/stable/chromedriver
     rm -rf "/opt/chromedriver/stable/chromedriver_linux64.zip"
 done
 
