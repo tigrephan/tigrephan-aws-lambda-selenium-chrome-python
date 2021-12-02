@@ -9,17 +9,17 @@ userAgent = ua.random
 
 def lambda_handler(event=None, context=None):
     # For troubleshooting, will show if your files are where you expective them to be once the container uploaded to aws
-    # print (os.getcwd())
-    # print (os.listdir())
-    # os.chdir(r"/tmp/")
-    # print (os.getcwd())
-    # print (os.listdir())
-    # os.chdir(r"/opt")
-    # print (os.getcwd())
-    # print (os.listdir())
-    # os.chdir(r"/opt/chrome/stable")
-    # print (os.getcwd())
-    # print (os.listdir())
+    print (os.getcwd())
+    print (os.listdir())
+    os.chdir(r"/tmp/")
+    print (os.getcwd())
+    print (os.listdir())
+    os.chdir(r"/opt")
+    print (os.getcwd())
+    print (os.listdir())
+    os.chdir(r"/opt/chrome/stable")
+    print (os.getcwd())
+    print (os.listdir())
     chrome_options = webdriver.ChromeOptions()
     chrome_options.binary_location = "/opt/chrome/stable/chrome"
     chrome_options.add_argument("--headless")

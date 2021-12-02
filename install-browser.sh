@@ -4,8 +4,8 @@ declare -A chrome_versions
 
 # Enter the list of browsers to be downloaded
 ### Using Chromium as documented here - https://www.chromium.org/getting-involved/download-chromium
-# chrome_versions=( ['89.0.4389.47']='843831' )
-# chrome_drivers=( "89.0.4389.23" )
+chrome_versions=( ['89.0.4389.47']='843831' )
+chrome_drivers=( "89.0.4389.23" )
 #firefox_versions=( "86.0" "87.0b3" )
 #gecko_drivers=( "0.29.0" )
 
