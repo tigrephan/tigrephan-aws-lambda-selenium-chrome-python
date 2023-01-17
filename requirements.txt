@@ -6,4 +6,4 @@ certifi==2021.10.8
 pendulum==2.1.2
 selenium==4.0.0
 pyvirtualdisplay
-fake_useragent
+fake-useragent
